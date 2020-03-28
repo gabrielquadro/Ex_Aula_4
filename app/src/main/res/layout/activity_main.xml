@@ -1,68 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="cliqueContatos"
-        android:text="Contatos">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
 
-    </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cliqueContato"
+            android:text="Contato">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="cliqueWeb"
-        android:text="Web">
+        </Button>
 
-    </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cliqueContatos"
+            android:text="Contatos"></Button>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="cliqueCall"
-        android:text="Call">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cliqueWeb"
+            android:text="Web">
 
-    </Button>
+        </Button>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="cliqueMaps1"
-        android:text="Maps1">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cliqueCall"
+            android:text="Call">
 
-    </Button>
+        </Button>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="cliqueMaps2"
-        android:text="Maps2">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cliqueMaps1"
+            android:text="Maps1">
 
-    </Button>
+        </Button>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="cliqueMaps3"
-        android:text="Maps3">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cliqueMaps2"
+            android:text="Maps2">
 
-    </Button>
+        </Button>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="cliquePicIt"
-        android:text="Pic it">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cliqueMaps3"
+            android:text="Maps3">
 
-    </Button>
+        </Button>
 
+        <Button
+            android:id="@+id/botaoFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pic it">
 
-</LinearLayout>
+        </Button>
+
+        <TextView
+            android:id="@+id/txtContato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contato:"></TextView>
+
+        <TextView
+            android:id="@+id/txtnome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome:"></TextView>
+
+        <TextView
+            android:id="@+id/txxTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefone:"></TextView>
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+    </LinearLayout>
+</ScrollView>
